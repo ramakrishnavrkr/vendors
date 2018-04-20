@@ -1,14 +1,17 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-title>Account Details</ion-title>
+	</ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+	<ion-list *ngFor="let invNum of InvoicesData;">
+		<ion-list *ngFor=" let invoice of invNum">
+			<ion-label>{{invoice.INV.instType}}</ion-label>			
+			<ion-label>{{invoice.INV.instAmount}}</ion-label>			
+			<ion-label>{{invoice.INV.instDate}}</ion-label>			
+			<ion-label>{{invoice.INV.instrNumber}}</ion-label>			
+			<ion-label>{{invoice.INV.patentInv}}</ion-label>			
+		</ion-list>
+	</ion-list>
 </ion-content>

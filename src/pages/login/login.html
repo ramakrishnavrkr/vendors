@@ -1,0 +1,15 @@
+<ion-content padding>
+	<ion-list>
+		<ion-item>
+			<ion-label floating>Username</ion-label>
+			<ion-input type="text" name='username' [(ngModel)]='UseName'></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Password</ion-label>
+			<ion-input type="password" name='password' [(ngModel)]='Password'></ion-input>
+		</ion-item>
+	</ion-list>
+	<button ion-button color='danger' block outline (click)='loginUser()'>Login</button>
+	<br>
+	<p text-center>For any Other queries Please contact <strong>support@kalamandir.com</strong></p>
+</ion-content>
